@@ -1,0 +1,14 @@
+logging:
+  level: DEBUG
+  file: "rolodex.log"
+  stdout: true
+
+database:
+  read_write:
+    name: RW
+    url: postgres://rolodex:rolodex@localhost/rolodex?sslmode=disable&pool_max_conns=100&pool_max_conn_lifetime=30s
+    log_queries: false
+  read_only:
+    name: RO
+    url: postgres://rolodex:rolodex@localhost/rolodex?sslmode=disable&pool_max_conns=100&pool_max_conn_lifetime=30s
+    log_queries: false
