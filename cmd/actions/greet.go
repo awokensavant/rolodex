@@ -6,8 +6,8 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-func GreetCommand() cli.Command {
-	return cli.Command{
+func GreetCommand() *cli.Command {
+	return &cli.Command{
 		Name:  "greet",
 		Usage: "Greet someone",
 		Flags: []cli.Flag{
