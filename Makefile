@@ -7,7 +7,7 @@ BUILD_DIR=.build
 BINARY=rolodex
 CONFIG_NAME=config-rolodex
 
-LDFLAGS=-ldflags "-X github.com/awokensavant/rolodex.Version=${VERSION} -X github.com/awokensavant/rolodex.Revision=${REVISION} -X github.com/awokensavant/rolodex.BuildTime=${BUILDTIME} -X github.com/awokensavant/rolodex.API=${API}"
+LDFLAGS=-ldflags "-X github.com/awokensavant/rolodex.Name=${BINARY} -X github.com/awokensavant/rolodex.Version=${VERSION} -X github.com/awokensavant/rolodex.Revision=${REVISION} -X github.com/awokensavant/rolodex.BuildTime=${BUILDTIME} -X github.com/awokensavant/rolodex.API=${API}"
 
 .PHONY: build
 # build: builds the rolodex binary

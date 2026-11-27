@@ -5,6 +5,7 @@ import (
 )
 
 var (
+	Name      string
 	Version   string
 	Revision  string
 	BuildTime string
@@ -12,5 +13,5 @@ var (
 )
 
 func GetVersion() string {
-	return fmt.Sprintf("go-gedcom v%s commit:%s asof %s satisfying api v%s", Version, Revision, BuildTime, API)
+	return fmt.Sprintf("%s v%s commit:%s asof %s satisfying api v%s", Name, Version, Revision, BuildTime, API)
 }
