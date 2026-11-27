@@ -5,6 +5,3 @@ type Name struct {
 	MiddleName string
 	LastName   string
 }
-
-type Address struct {
-}
